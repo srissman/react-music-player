@@ -8,6 +8,12 @@ import Search from './components/search.component';
 
 import Details from './components/details.component';
 
+import Player from './components/player.component';
+
+import Progress from './components/progress.component';
+
+import Footer from './components/footer.component';
+
 // Component Class
 class App extends React.Component {
     // render method is most important
@@ -17,6 +23,12 @@ class App extends React.Component {
             <div>
                 <Search />
                 <Details title={'Track title'} />
+                <Player />
+                <Progress
+                    position={'0.3'}
+                    elapsed={'00:00'}
+                    total={'0:40'} />
+                <Footer />
             </div>
         );
     }
